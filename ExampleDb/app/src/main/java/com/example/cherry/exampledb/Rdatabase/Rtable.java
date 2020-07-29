@@ -7,12 +7,12 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "Student" )
 public class Rtable {
 
-    @PrimaryKey(autoGenerate = true)
-    @NonNull
+
 
     int id;
 
-
+    @PrimaryKey
+    @NonNull
     String roll;
     String name,number;
 

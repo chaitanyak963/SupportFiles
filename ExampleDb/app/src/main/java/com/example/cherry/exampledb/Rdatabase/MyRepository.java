@@ -31,7 +31,9 @@ public class MyRepository {
 
         @Override
         protected Void doInBackground(Rtable... rtables) {
-            rDatabase.rdao().insert(rtables[0]);
+            for (int i=0;i<rtables.length;i++) {
+                rDatabase.rdao().insert(rtables[i]);
+            }
             return null;
         }
     }
